@@ -1,0 +1,25 @@
+{
+  "name": "button-blick",
+  "version": "1.0.0",
+  "description": "interest dutton with flash",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paladin00-code/button-blick.git"
+  },
+  "author": "Paladin00",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paladin00-code/button-blick/issues"
+  },
+  "homepage": "https://github.com/Paladin00-code/button-blick#readme"
+}
