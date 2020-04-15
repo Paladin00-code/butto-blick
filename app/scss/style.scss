@@ -54,7 +54,7 @@ body{
     letter-spacing: 5px;
     text-align: center;
     // text-shadow: 4px 4px 6px #000;
-    transition: 1s;
+    // transition: 1s;
     overflow: hidden;
     &::before,
     &::after{
@@ -85,4 +85,8 @@ body{
     }
 }
 
-
+h1{
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+}
