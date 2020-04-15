@@ -1,2 +1,88 @@
 @import "../../node_modules/normalize.css/normalize";
 
+body{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.scene{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    min-height: 100hv;
+}
+
+.layer{
+    position: absolute;
+    left: -10%;
+    top: -5%;
+    width: 110%;
+    height: 110%;
+    &-bg{
+        background: url(../img/bee.jpg) center no-repeat;
+        background-size: cover;
+    }
+    &1{
+        // background: url(/app/img/bee.jpg) center no-repeat;
+        background-size: cover;
+    }
+    &1{
+        // background: url(/app/img/bee.jpg) center no-repeat;
+        background-size: cover;
+    }
+}
+
+.button{
+    position: relative;
+    margin: 20px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #0000d2;
+    font-family: sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #00dfdf;
+    line-height: 60px;
+    letter-spacing: 5px;
+    text-align: center;
+    // text-shadow: 4px 4px 6px #000;
+    transition: 1s;
+    overflow: hidden;
+    &::before,
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -200px;
+        width: 60px;
+        height: 100px;
+        background-color: #fff;
+        filter: blur(40px);
+        transform: skewX(-30deg);
+    }
+    &:hover::before,
+    &:focus::before{
+        left: calc(100% + 150px);
+        transition: 1s;
+    }
+    &:hover::after,
+    &:focus::after{
+        left: calc(100% + 150px);
+        transition: 1s 0.5s;
+    }
+    &:hover{
+        filter: brightness(1.5);
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+
